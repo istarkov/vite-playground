@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md text-white bg-blue-500 hover:bg-blue-600;
+  }
+
+  .scrollbar-hide {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .test {
+    --hello: calc(1px * (var(--size, 1) - 1) * var(--scroll, 1));
+  }
+}

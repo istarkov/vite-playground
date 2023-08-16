@@ -27,6 +27,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "vite.config.ts", "tailwind.config.ts"],
+  "include": [
+    "src",
+    "pages",
+    "renderer",
+    "server",
+    "vite.config.ts",
+    "tailwind.config.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
